@@ -187,6 +187,8 @@ class Staging(Common):
     """
     
     # Security
+    DEBUG = False
+    ALLOWED_HOSTS = "registerjob.herokuapp.com"
     SESSION_COOKIE_SECURE = values.BooleanValue(True)
     SECURE_BROWSER_XSS_FILTER = values.BooleanValue(True)
     SECURE_CONTENT_TYPE_NOSNIFF = values.BooleanValue(True)
